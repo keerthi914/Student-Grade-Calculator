@@ -1,0 +1,78 @@
+Student Grade Calculator
+Objective
+To develop a Python program that calculates the total marks, average marks, and grade of a student based on marks obtained in five subjects.
+Inputs
+1.	Student Name
+2.	Roll Number
+3.	Marks of Subject 1
+4.	Marks of Subject 2
+5.	Marks of Subject 3
+6.	Marks of Subject 4
+7.	Marks of Subject 5
+Outputs
+1.	Total Marks
+2.	Average Marks
+3.	Grade (A, B, C, D, or F)
+Algorithm
+1.	Start the program.
+2.	Read the student's name and roll number.
+3.	Read the marks of five subjects.
+4.	Calculate the total marks by adding all subject marks.
+5.	Calculate the average by dividing the total by 5.
+6.	Determine the grade using the following conditions:
+o	Average 90–100: Grade A
+o	Average 75–89: Grade B
+o	Average 60–74: Grade C
+o	Average 35–59: Grade D
+o	Average below 35: Grade F
+7.	Display the student's details, total marks, average, and grade.
+8.	End the program.
+Program
+name = input("Enter Student Name: ")
+roll_no = input("Enter Roll Number: ")
+
+m1 = int(input("Enter Subject 1 Marks: "))
+m2 = int(input("Enter Subject 2 Marks: "))
+m3 = int(input("Enter Subject 3 Marks: "))
+m4 = int(input("Enter Subject 4 Marks: "))
+m5 = int(input("Enter Subject 5 Marks: "))
+
+total = m1 + m2 + m3 + m4 + m5
+average = total / 5
+
+if average >= 90:
+    grade = "A"
+elif average >= 75:
+    grade = "B"
+elif average >= 60:
+    grade = "C"
+elif average >= 35:
+    grade = "D"
+else:
+    grade = "F"
+
+print("\n----- STUDENT REPORT -----")
+print("Name:", name)
+print("Roll Number:", roll_no)
+print("Total Marks:", total)
+print("Average:", average)
+print("Grade:", grade)
+Sample Output
+Enter Student Name: Keerthi
+Enter Roll Number: 101
+Enter Subject 1 Marks: 95
+Enter Subject 2 Marks: 88
+Enter Subject 3 Marks: 90
+Enter Subject 4 Marks: 85
+Enter Subject 5 Marks: 92
+----- STUDENT REPORT -----
+Name: Keerthi
+Roll Number: 101
+Total Marks: 450
+Average: 90.0
+Grade: A
+Conclusion
+The Student Grade Calculator project was successfully implemented using Python. The program accepts student details and marks for five subjects, calculates the total and average, determines the appropriate grade, and displays the results accurately. This project helped in understanding Python concepts such as variables, input/output operations, arithmetic operations, and conditional statements.
+
+
+
